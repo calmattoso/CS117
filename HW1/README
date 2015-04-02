@@ -1,0 +1,17 @@
+Assignment #1
+=============
+
+This assigment entails the implementation of a set of simple functions that deal
+with image manipulation as a warmup for the remainder of the course. As such,
+it serves as a review of MATLAB to get things started.
+
+The first function is 'rotate.m', which merely applies a rotation transformation
+to a set of 2D-coordinates. Building on top of this, there's `rotate_image.m`, 
+which implements the exact same functionality as MATLAB's native `imrotate.m`. 
+
+Finally, `straighten.m` allows a user to select two points from a given image
+that should be colinear on a horizontal line; the purpose of this function is to adjust an image such that some of its scene elements are straight to user's 
+perspective and desire. It's a really useful function for photos in which 
+elements in the background are not perfectly straight (e.g. ocean, canyon 
+landscapes, etc). This function has the previous two as dependencies.
+
