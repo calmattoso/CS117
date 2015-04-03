@@ -15,4 +15,13 @@ function Xrot = rotate(X,angle)
  % return value:
  %  
  %  Xrot : a 2xN matrix containing the rotated points.
- %   
+ %  
+ 
+ angle_rad = pi * (angle/180.0); % convert theta to radians
+ % counter-clockwise (minus sign on upper right corner) rotation matrix
+ rot_matrix = [ cos(angle_rad)  -sin(angle_rad); ... 
+                sin(angle_rad)   cos(angle_rad) ];
+ 
+ Xrot = rot_matrix * X;
+end
+ 
